@@ -2,12 +2,22 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 100px;
-
+    border-top: 5px solid $grey-dark;
+    border-bottom: 1px solid $grey-light;
     // Positioning context for the mobile navigation icon
     position: relative;
+
+    .logo {
+        margin-right:auto;
+    }
+}
+
+.header-row {
+    display:-webkit-flex;
+    display:flex;
+    list-style-type:none;
+    padding:0;
+    justify-content:flex-end;
 }
 
 .site-title {
@@ -16,12 +26,16 @@
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
-    float: left;
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $grey-dark;
     }
+}
+
+.site-content {
+    background: url(../images/paper-texture.png);
+    padding: $spacing-unit 0;
 }
 
 .site-nav {
@@ -47,7 +61,7 @@
         top: 9px;
         right: $spacing-unit / 2;
         background-color: $background-color;
-        border: 1px solid $grey-color-light;
+        border: 1px solid $grey-light;
         border-radius: 5px;
         text-align: right;
 
@@ -65,7 +79,7 @@
                 height: 15px;
 
                 path {
-                    fill: $grey-color-dark;
+                    fill: $grey-dark;
                 }
             }
         }
@@ -92,6 +106,35 @@
     }
 }
 
+nav {
+    ul {
+        margin-left: 0;
+        margin-bottom: 15px;
+        list-style: none;
+        background-color: #fff;
+        border: 1px solid #d1d5da;
+        border-radius: 3px;
+    }
+    li {
+
+        >a {
+            position: relative;
+            display: block;
+            padding: 10px 15px;
+            border-bottom: 1px solid $grey-light;
+
+            &.active {
+                background-color: $red;
+                color: $white;
+            }
+        }
+        &:last-child > a {
+            border:none;
+        }
+    }
+    
+}
+
 .site-banner {
     background-image: url(../images/plane.jpg);
     background-position: center;
@@ -101,9 +144,12 @@
 }
 
 .hero {
+    font-family: $alt-font-family;
     font-size: $xlarge-font-size;
-    border: 2px solid $black;
+    border: 2px solid $grey-light;
     padding: 1rem 2rem;
+    background-color: $background-color;
+    margin-bottom: 1rem;
 }
 
 
@@ -111,12 +157,15 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    background-color: $black;
+    border-top: 1px solid $grey-light;
     padding: $spacing-unit 0;
+        color: $white;
+
 }
 
 .footer-heading {
-    font-size: 18px;
+    font-size: 30px;
     margin-bottom: $spacing-unit / 2;
 }
 
@@ -124,55 +173,6 @@
 .social-media-list {
     list-style: none;
     margin-left: 0;
-}
-
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
-}
-
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
 }
 
 
@@ -199,7 +199,7 @@
 
 .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
+    color: $grey;
 }
 
 .post-link {
