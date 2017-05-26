@@ -25,6 +25,12 @@ body {
     font-kerning: normal;
 }
 
+.bg-wrapper {
+    background: linear-gradient( rgba(38,35,36, 0.7), rgba(38,35,36, 0.7) ), url('/images/wooded-trail.jpeg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:top;
+}
 
 
 /**
@@ -100,6 +106,16 @@ a {
     }
 }
 
+a.white-link {
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+        color: $white;
+        text-decoration: underline;
+    }
+}
+
 
 
 /**
@@ -147,11 +163,12 @@ pre {
 }
 
 em {
-    font-size: $large-font-size;
     font-style: normal;
 }
 
-
+hr {
+    margin: $spacing-unit 60px;
+}
 
 /**
  * Wrapper

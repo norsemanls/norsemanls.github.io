@@ -2,25 +2,31 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-
+@import url('https://fonts.googleapis.com/css?family=Lato:300,700');
 
 
 // Our variables
 $base-font-family: Helvetica, sans-serif;
 $alt-font-family: Garamond, serif;
+$fancy-font-family: 'Lato', sans-serif;
 $base-font-size:   16px;
-$base-font-weight: 400;
+$base-font-weight: 300;
 $small-font-size:  $base-font-size * 0.875;
 $large-font-size:  $base-font-size * 1.125;
 $xlarge-font-size:  $base-font-size * 1.5;
+$xxlarge-font-size:  $base-font-size * 2;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$red:               #AB4341;
+$red:               #452927;
+$green:             #304F2C;
 $blue:              #2776A6;
-$black:             #353F42;
-$tan:               #BDAA86;
+$black:             #262324;
+$alpha-light: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+$alpha:       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+$alpha-dark:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+$tan:               #73784F;
 $grey:              #828282;
 $white:             #fdfdfd;
 

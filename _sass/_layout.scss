@@ -4,11 +4,50 @@
 .site-header {
     border-top: 5px solid $grey-dark;
     border-bottom: 1px solid $grey-light;
+    padding-left: 10px;
+    padding-right: 10px;
     // Positioning context for the mobile navigation icon
     position: relative;
+    color:$white;
+    background: transparent;
+}
 
-    .logo {
-        margin-right:auto;
+a.logo {
+    font-family: $fancy-font-family;
+    font-size: $xlarge-font-size;
+    margin-top: 8px;
+    color: $white;
+    position:relative;
+
+    h1, img {
+        display:inline-block;
+        height:5rem;
+    }
+
+    img {
+        vertical-align: top;
+        margin-top: 5px;
+    }
+
+    &:before {
+        background-image: url("/images/norseman.png");
+        height:40px;
+        width:40px;
+    }
+
+    &:hover {
+        text-decoration:none;
+    }
+
+    span {
+        display:block;
+        line-height: 2.5rem;
+    }
+
+    span:first-child {
+        font-size:smaller;
+        position:relative;
+        top: 3px;
     }
 }
 
@@ -34,94 +73,65 @@
 }
 
 .site-content {
-    background: url(../images/paper-texture.png);
+    background:transparent;
+    
     padding: $spacing-unit 0;
 }
 
-.site-nav {
-    float: right;
-    line-height: 56px;
+// nav {
+//     font-family: $fancy-font-family;
+//     font-size: $xlarge-font-size;
+//     color:$white;
+//     ul {
+//         margin-left: 0;
+//         margin-bottom: 15px;
+//         list-style: none;
+//         text-align: center;
+//         padding: 10px 0;
+        
 
-    .menu-icon {
-        display: none;
-    }
+//     }
+//     li {
+//             display: inline-block;
+//             padding: 0 1rem;            
+//             border-right:2px solid $white;
+//         >a {
+//             color:$white;
+//             position: relative;
+//             &:hover {
+//                 color: $white;
+//             }
 
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
-
-        // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-            margin-right: 20px;
-        }
-    }
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: $spacing-unit / 2;
-        background-color: $background-color;
-        border: 1px solid $grey-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-            margin-left: 20px;
-        }
-    }
-}
+//             &.active {
+//                 color: $white;
+//             }
+//         }
+//         &:last-child {
+//             border:none;
+//         }
+//     }
+    
+// }
 
 nav {
+    font-size: $large-font-size;
+    
+
     ul {
         margin-left: 0;
         margin-bottom: 15px;
         list-style: none;
-        background-color: #fff;
+        background-color: $tan;
         border: 1px solid #d1d5da;
-        border-radius: 3px;
     }
     li {
 
         >a {
+            color: $grey-light;
             position: relative;
             display: block;
             padding: 10px 15px;
-            border-bottom: 1px solid $grey-light;
+            border-bottom: 1px solid #d1d5da;
 
             &.active {
                 background-color: $red;
@@ -144,12 +154,29 @@ nav {
 }
 
 .hero {
-    font-family: $alt-font-family;
-    font-size: $xlarge-font-size;
-    border: 2px solid $grey-light;
-    padding: 1rem 2rem;
-    background-color: $background-color;
+    font-family: $fancy-font-family;
+    font-size: $xxlarge-font-size;
+    padding: 1rem 2rem 0.8rem;
+    // border: 2px solid $grey-dark;
+    background: transparent;
+    color: $white;
     margin-bottom: 1rem;
+}
+
+.panel {
+    margin: 0 $spacing-unit;
+    // background-color: $red;
+    // color: $white;
+    // border: 1px solid $grey-light;
+    // padding: 10px 20px;
+    font-size: $xlarge-font-size;
+    text-align:center;
+    // border-radius: 10px;
+    color: $white;
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    border: 1px solid $white;
 }
 
 
@@ -157,11 +184,20 @@ nav {
  * Site footer
  */
 .site-footer {
-    background-color: $black;
+    background-color: $tan;
     border-top: 1px solid $grey-light;
-    padding: $spacing-unit 0;
+    padding: $spacing-unit 0 0;
         color: $white;
+    .wrapper {
+        padding-bottom: $spacing-unit;
+    }
+}
 
+.final-footer {
+    line-height:$spacing-unit;
+    background: $alpha-dark;
+    font-size: smaller;
+    text-align: center;
 }
 
 .footer-heading {
