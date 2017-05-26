@@ -184,10 +184,13 @@ nav {
 .site-footer {
     background-color: $tan;
     border-top: 1px solid $grey-light;
-    padding: $spacing-unit 0 0;
+    padding: 60px 0 0;
         color: $white;
     .wrapper {
-        padding-bottom: $spacing-unit;
+        padding-bottom: 60px;
+    }
+    .footer-description {
+        margin-top: 10px;
     }
 }
 
