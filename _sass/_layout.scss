@@ -75,7 +75,7 @@ a.logo {
 .site-content {
     background:transparent;
     
-    padding: $spacing-unit 0;
+    padding: $spacing-unit 0 60px;
 }
 
 // nav {
@@ -164,16 +164,12 @@ nav {
 .panel {
     margin: 0 $spacing-unit;
     // background-color: $red;
-    // color: $white;
-    // border: 1px solid $grey-light;
-    // padding: 10px 20px;
     font-size: $large-font-size;
     text-align:center;
     // border-radius: 10px;
     color: $white;
     min-height: 20px;
     padding: 19px;
-    margin-bottom: 20px;
     border: 1px solid $white;
 }
 
