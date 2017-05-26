@@ -78,41 +78,6 @@ a.logo {
     padding: $spacing-unit 0 60px;
 }
 
-// nav {
-//     font-family: $fancy-font-family;
-//     font-size: $xlarge-font-size;
-//     color:$white;
-//     ul {
-//         margin-left: 0;
-//         margin-bottom: 15px;
-//         list-style: none;
-//         text-align: center;
-//         padding: 10px 0;
-        
-
-//     }
-//     li {
-//             display: inline-block;
-//             padding: 0 1rem;            
-//             border-right:2px solid $white;
-//         >a {
-//             color:$white;
-//             position: relative;
-//             &:hover {
-//                 color: $white;
-//             }
-
-//             &.active {
-//                 color: $white;
-//             }
-//         }
-//         &:last-child {
-//             border:none;
-//         }
-//     }
-    
-// }
-
 nav {
     font-size: $medium-font-size;
 
@@ -121,23 +86,31 @@ nav {
         margin-bottom: 15px;
         list-style: none;
         background-color: $white-alpha;
-        padding: 10px 20px;
     }
     li {
+        padding: 0 20px;
 
-        >a {
+        &.active {
+            background-color: $red;
+            > a {
+                color: $white;
+            }
+        }
+
+        > a {
             position: relative;
             display: block;
             padding: 20px 10px;
             border-bottom: 1px solid $red;
-
-            &.active {
-                background-color: $red;
-                color: $white;
-            }
         }
+        
+        &:first-child > a {
+            padding-top: 30px;
+        }
+
         &:last-child > a {
-            border:none;
+            border: none;
+            padding-bottom:30px;
         }
     }
     
