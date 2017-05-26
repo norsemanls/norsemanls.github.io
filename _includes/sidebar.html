@@ -1,8 +1,5 @@
 <nav>
     <ul role="navigation">
-        <li>
-            <a class="{% if page.url == '/' %}active{% endif %}" href="/">Home</a>
-        </li>
         {% for my_page in site.pages %}
             {% if my_page.title %}
             <li>

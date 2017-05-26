@@ -12,8 +12,9 @@ $fancy-font-family: 'Lato', sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 300;
 $small-font-size:  $base-font-size * 0.875;
-$large-font-size:  $base-font-size * 1.125;
-$xlarge-font-size:  $base-font-size * 1.5;
+$medium-font-size:  $base-font-size * 1.125;
+$large-font-size:  $base-font-size * 1.5;
+$xlarge-font-size:  $base-font-size * 1.75;
 $xxlarge-font-size:  $base-font-size * 2;
 $base-line-height: 1.5;
 
@@ -29,6 +30,8 @@ $alpha-dark:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 $tan:               #73784F;
 $grey:              #828282;
 $white:             #fdfdfd;
+
+$white-alpha: rgba(255,255,255,0.75);
 
 $text-color:        $black;
 $link-color:        $blue;
