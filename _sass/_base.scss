@@ -23,14 +23,7 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
-}
-
-.bg-wrapper {
-    background: linear-gradient( rgba(11,26,9, 0.6), rgba(11,26,9, 0.6) ), url('../images/wooded-trail.jpeg');
-    // background: linear-gradient( rgba(38,35,36, 0.7), rgba(38,35,36, 0.7) ), url('../images/wooded-trail.jpeg');
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position:top;
+    background: url("../images/paper-texture.png")
 }
 
 

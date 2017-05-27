@@ -1,4 +1,19 @@
 /**
+ * Background for main content
+ */
+.bg-wrapper {
+    background: linear-gradient( rgba(11,26,9, 0.5), rgba(11,26,9, 0.5) ), url('../images/wooded-trail.jpeg');
+    // background: linear-gradient( rgba(38,35,36, 0.7), rgba(38,35,36, 0.7) ), url('../images/wooded-trail.jpeg');
+    background-size: 100% auto;
+    background-repeat:no-repeat;
+    background-position:top;
+
+    @include media-query($on-palm){
+        background: $green;
+    }
+}
+
+/**
  * Site header
  */
 .site-header {
@@ -10,29 +25,26 @@
     position: relative;
     color:$white;
     background: transparent;
-}
+}   
 
 a.logo {
     font-family: $fancy-font-family;
-    font-size: $large-font-size;
     margin-top: 8px;
     color: $white;
     position:relative;
 
+    h1 {
+        font-size: 36px;
+    }
+
     h1, img {
         display:inline-block;
-        height:5rem;
     }
 
     img {
         vertical-align: top;
         margin-top: 5px;
-    }
-
-    &:before {
-        background-image: url("../images/norseman.png");
-        height:40px;
-        width:40px;
+        height: 80px;
     }
 
     &:hover {
@@ -48,6 +60,19 @@ a.logo {
         font-size:smaller;
         position:relative;
         top: 3px;
+    }
+
+    @include media-query($on-palm){
+        h1 {
+            font-size: 24px;
+        }
+        img {
+            height:50px;
+        }
+
+        span {
+            line-height: 1.5rem;
+        }
     }
 }
 
@@ -95,22 +120,26 @@ nav {
             > a {
                 color: $white;
             }
+
+            & + li > a{
+                border:none;
+            }
         }
 
         > a {
             position: relative;
             display: block;
             padding: 20px 10px;
-            border-bottom: 1px solid $red;
+            border-top: 1px solid $red;
         }
         
-        &:first-child > a {
-            padding-top: 30px;
-        }
+        // &:first-child > a {
+        //     padding-top: 30px;
+        // }
 
-        &:last-child > a {
+        &:first-child > a {
             border: none;
-            padding-bottom:30px;
+            // padding-bottom:30px;
         }
     }
     
@@ -127,7 +156,7 @@ nav {
 .hero {
     font-family: $fancy-font-family;
     font-size: $xlarge-font-size;
-    padding: 1rem 2rem 0.8rem;
+    padding: 1rem 0 0.8rem;
     // border: 2px solid $grey-dark;
     background: transparent;
     color: $white;
@@ -135,15 +164,20 @@ nav {
 }
 
 .panel {
-    margin: 0 $spacing-unit;
-    // background-color: $red;
-    font-size: $large-font-size;
-    text-align:center;
-    // border-radius: 10px;
-    color: $white;
     min-height: 20px;
     padding: 19px;
     border: 1px solid $white;
+    background: $white-alpha;
+
+    .fa {
+        color: $tan;
+    }
+
+    &.panel-loud {
+        text-align:center;
+        font-size: $large-font-size;
+        color:$red; 
+    }
 }
 
 
@@ -190,8 +224,20 @@ nav {
     padding: $spacing-unit 0;
 }
 
-.page-heading {
-    font-size: 20px;
+.page-header {
+    margin-bottom: $spacing-unit;
+
+}
+
+.page-title {
+    color: $white;
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
 }
 
 .post-list {
@@ -211,25 +257,6 @@ nav {
 .post-link {
     display: block;
     font-size: 24px;
-}
-
-
-
-/**
- * Posts
- */
-.post-header {
-    margin-bottom: $spacing-unit;
-}
-
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
 }
 
 .post-content {
