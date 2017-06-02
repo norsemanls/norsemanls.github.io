@@ -26,18 +26,8 @@
     color:$white;
     background: transparent;
 }   
-
-a.logo {
-    font-family: $fancy-font-family;
-    margin-top: 8px;
-    color: $white;
-    position:relative;
-
-    h1 {
-        font-size: 36px;
-    }
-
-    h1, img {
+.logo {
+    a, img {
         display:inline-block;
     }
 
@@ -47,21 +37,28 @@ a.logo {
         height: 80px;
     }
 
-    &:hover {
-        text-decoration:none;
-    }
-
-    span {
-        display:block;
-        line-height: 2.5rem;
-    }
-
-    span:first-child {
-        font-size:smaller;
+    a {
+        font-family: $fancy-font-family;
+        margin-top: 8px;
+        color: $white;
         position:relative;
-        top: 3px;
-    }
 
+        h1 {
+            font-size: 36px;
+        }
+        &:hover {
+            text-decoration:none;
+        }
+        span {
+            display:block;
+        }
+
+        span:first-child {
+            font-size:smaller;
+            position:relative;
+            top: 3px;
+        }
+    }
     @include media-query($on-palm){
         h1 {
             font-size: 24px;
@@ -75,6 +72,7 @@ a.logo {
         }
     }
 }
+
 
 .header-row {
     display:-webkit-flex;
@@ -95,6 +93,10 @@ a.logo {
     &:visited {
         color: $grey-dark;
     }
+}
+
+.popover {
+    color: $red;
 }
 
 .site-content {

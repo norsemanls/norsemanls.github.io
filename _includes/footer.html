@@ -16,3 +16,32 @@
     Copyright © Norseman Group Life Settlements. All rights reserved.
   </div>
 </footer>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+  // $(document).on("ready", function(){
+  //   window.setTimeout(, 1000);
+  // })
+  var topLogo = $('.norseman-plane').first();
+  topLogo.popover({
+    content: "Learn about our unique logo, name & philosophy",
+    placement:"bottom"
+  });
+  setTimeout(function(){
+    topLogo.popover("show")
+  }, 2000)
+
+  $(document).on('click', function (e) {
+    $('[data-toggle="popover"],[data-original-title]').each(function () {
+        //the 'is' for buttons that trigger popups
+        //the 'has' for icons within a button that triggers a popup
+        if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {                
+            (($(this).popover('hide').data('bs.popover')||{}).inState||{}).click = false  // fix for BS 3.3.6
+        }
+
+    });
+});
+  
+</script>

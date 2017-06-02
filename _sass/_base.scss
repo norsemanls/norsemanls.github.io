@@ -173,6 +173,11 @@ hr {
     margin: $spacing-unit 60px;
 }
 
+label {
+    font-family: $fancy-font-family;
+    font-weight: normal;
+}
+
 /**
  * Wrapper
  */
