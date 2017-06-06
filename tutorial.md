@@ -34,6 +34,6 @@ function checkCheckedIn () {
 
 $(window).on("hashchange", function(){
     checkCheckedIn();
-})
+});
 
 </script>
