@@ -16,3 +16,4 @@ twitter_username: jekyllrb
 facebook_username: NorsemanLifeSettlements
 # Build settings
 markdown: kramdown
+exclude-header: false
