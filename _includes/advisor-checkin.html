@@ -1,29 +1,35 @@
-<form id="contact-form" method="post" action="https://formspree.io/jplwood@gmail.com" role="form">
+<form id="advisor-checkin-form" action="https://formspree.io/jplwood@gmail.com" method="post">
+    <input type="text" name="_subject" value="Norseman Group Website - Advisor Tutorial Check-In" class="hidden">
+    <input type="text" name="_gotcha" class="hidden">
+    <input type="text" name="_next" value="#checked-in" class="hidden">
 
-    <div class="messages"></div>
-
-    <div class="controls">
-        <input id="form" type="hidden" name="form" value="Advisor Tutorial Check-In">
-        <div class="form-group">
-            <label for="form_name">Name</label>
-            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name" required="required" data-error="Name is required.">
-            <div class="help-block with-errors"></div>
+    <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+                <label for="form_name">Name</label>
+                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name" required="required"
+                    data-error="Name is required.">
+            </div>
         </div>
-        <div class="form-group">
-            <label for="form_email">Email</label>
-            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-            <div class="help-block with-errors"></div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+                <label for="form_email">Email</label>
+                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required"
+                    data-error="Valid email is required.">
+            </div>
         </div>
-        <div class="form-group">
-            <label for="form_phone">Phone</label>
-            <input id="form_phone" type="text" name="phone" class="form-control" placeholder="Please enter your phone number *" required="required" data-error="Valid phone number is required.">
-            <div class="help-block with-errors"></div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="form-group">
+                <label for="form_phone">Phone</label>
+                <input id="form_phone" type="text" name="phone" class="form-control" placeholder="Please enter your phone number *" required="required"
+                    data-error="Valid phone number is required.">
+            </div>
         </div>
-        <div class="form-group">
-            <label for="form_message">Message</label>
-            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" maxlength="3000" required="required" data-error="Please,leave us a message."></textarea>
-            <div class="help-block with-errors"></div>
-            <input type="submit" class="btn btn-default" value="Send message">
-        </div>
+    </div>
+    <div class="form-group">
+        <label for="form_message">Message</label>
+        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" maxlength="3000"
+            required="required" data-error="Please,leave us a message."></textarea>
+        <input type="submit" class="btn btn-default" value="Send message">
     </div>
 </form>
