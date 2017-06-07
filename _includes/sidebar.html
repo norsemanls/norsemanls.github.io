@@ -1,10 +1,16 @@
 <nav>
     <ul role="navigation">
+        <li class="{% if page.url == '/' %}active{% endif %}">
+            <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
+        </li>
         <li class="{% if page.url == '/overview/' %}active{% endif %}">
             <a href="{{ '/overview' | prepend: site.baseurl }}">Overview of Settlements</a>
         </li>
+        <li class="{% if page.url == '/about/' %}active{% endif %}">
+            <a href="{{ '/about' | prepend: site.baseurl }}">About Norseman</a>
+        </li>
         <li class="{% if page.url == '/why-norseman/' %}active{% endif %}">
-            <a href="{{ '/why-norseman' | prepend: site.baseurl }}">Why Norseman Group</a>
+            <a href="{{ '/why-norseman' | prepend: site.baseurl }}">Why Work With Us</a>
         </li>
         <li class="{% if page.url == '/roadmap/' %}active{% endif %}">
             <a href="{{ '/roadmap' | prepend: site.baseurl }}">Roadmap</a>

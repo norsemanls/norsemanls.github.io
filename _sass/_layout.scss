@@ -2,11 +2,12 @@
  * Background for main content
  */
 .bg-wrapper {
-    background: linear-gradient( rgba(11,26,9, 0.5), rgba(11,26,9, 0.5) ), url('../images/wooded-trail.jpeg');
+    background: linear-gradient( rgba(11,26,9, 0.65), rgba(11,26,9, 0.65) ), url('../images/wooded-trail.jpeg');
     // background: linear-gradient( rgba(38,35,36, 0.7), rgba(38,35,36, 0.7) ), url('../images/wooded-trail.jpeg');
-    background-size: 100% auto;
+    background-size: 120% auto;
     background-repeat:no-repeat;
     background-position:top;
+    height: 100%;
 
     @include media-query($on-palm){
         background: $green;
@@ -101,12 +102,12 @@
 
 .site-content {
     background:transparent;
-    
     padding: $spacing-unit 0 60px;
+    margin-bottom: 10rem;
 }
 
 nav {
-    font-size: $medium-font-size;
+    font-size: $small-medium-font-size;
 
     ul {
         margin-left: 0;
@@ -124,14 +125,14 @@ nav {
             }
 
             & + li > a{
-                border:none;
+                border: none;
             }
         }
 
         > a {
             position: relative;
             display: block;
-            padding: 20px 10px;
+            padding: 10px 5px;
             border-top: 1px solid $red;
         }
         
@@ -158,11 +159,11 @@ nav {
 .hero {
     font-family: $fancy-font-family;
     font-size: $xlarge-font-size;
-    padding: 1rem 0 0.8rem;
+    padding-left: 2rem;
     // border: 2px solid $grey-dark;
     background: transparent;
     color: $white;
-    margin-bottom: 1rem;
+    margin-bottom: 6rem;
 }
 
 .hero-alt {
@@ -184,7 +185,10 @@ nav {
 
     &.panel-loud {
         text-align:center;
-        font-size: $large-font-size;
+        font-size: $medium-font-size;
+        margin-left: 6rem;
+        margin-right: 6rem;
+        padding: 10px;
         color:$red; 
     }
 
@@ -193,10 +197,14 @@ nav {
         font-size: $medium-font-size;
         color: $green;
         padding-top: 20px;
-        padding-bottom: 220px;
+        padding-bottom: 250px;
         background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../images/plane-square.jpg');
         background-position: center top;
         background-size:cover;
+
+        p {
+            margin-bottom: 5px;
+        }
     }
 
     @include media-query($on-palm) {

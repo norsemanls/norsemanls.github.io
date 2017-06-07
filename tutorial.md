@@ -4,7 +4,7 @@ title: Advisor Tutorial
 permalink: /tutorial/
 ---
 <section id="advisor-checkin">
-Before continuing to the tutorial, please check in first by providing some basic information:
+<p>Before continuing to the tutorial, please check in first by providing some basic information:</p>
 {% include advisor-checkin.html %}
 <span class="help-block"> Already checked in? <a href="#checked-in">Jump to the tutorial</a></span>
 </section>
