@@ -1,6 +1,6 @@
 ---
 layout: page-no-header
-title: About our Name & Logo
+title: About Norseman Group
 permalink: /about/
 ---
 
@@ -20,6 +20,6 @@ permalink: /about/
     <p>The Norseman Group was named after this aircraft because we have the same characteristics which are needed to guide you safely through the world of Life Settlements.</p>
   </div>
 </div>
-<div class="text-center">
-This is why major financial service companies choose us.
-</div>
+<p class="text-center boom">
+  This is why major financial service companies choose us.
+</p>

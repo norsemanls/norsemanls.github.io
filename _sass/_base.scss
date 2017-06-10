@@ -101,6 +101,10 @@ a {
     }
 }
 
+article a {
+    color: $blue;
+}
+
 a.white-link {
     color: $white;
     text-decoration: none;

@@ -49,7 +49,7 @@ underwriting criteria in determining who is eligible for a life settlement:
 * Have a significant amount of life insurance (e.g., $250,000 or more)
 * The policy is past the contestability period (generally 2 years from policy inception)
 
-### Policies less than two years old
+## Policies less than two years old
 
 * Most life settlement providers require that a life insurance policy be in effect for more than two years. That
 is because an incontestability clause is standard in most life insurance policies. This clause typically
@@ -75,9 +75,9 @@ premium paid), or it can offer her the option of a higher premium to compensate 
 information. After two years, the insurer likely has no recourse and must continue to provide
 the life insurance coverage agreed to in the contract.
 
-### Advantages of life settlements
+## Advantages of life settlements
 
-#### Often a better payout than surrendering for cash value
+### Often a better payout than surrendering for cash value
 
 * Life settlements allow policyowners more flexibility in managing the cash value of their life insurance
 policies. If a policyowner wants to forfeit a policy's death benefit and "cash out" of the policy, he or she
@@ -87,7 +87,7 @@ use the proceeds for any purpose he or she wishes--including making lifetime gif
 
     * <strong class="danger">Caution:</strong> Individual gifts in excess of the annual gift tax exclusion made from proceeds of a life settlement may be subject to gift tax.
 
-#### Life insurance dollars can be applied to other needs
+### Life insurance dollars can be applied to other needs
 
 * Individuals purchase life insurance for many reasons (e.g., to provide income to their families in case of
 their death, to pay for children's college education). When children become independent and couples
@@ -101,7 +101,7 @@ careers, is often an important part of financial plans for older individuals. Ho
 costly, and cash may not be readily available. A life settlement may be a source of funds to purchase
 such long-term care insurance.
 
-### Disadvantages of life settlements
+## Disadvantages of life settlements
 
 * Currently, there is little regulation of life settlements, so there is some potential for confusion and
 misunderstanding. This is expected to change over time, however.
@@ -112,9 +112,9 @@ the life settlement option.
 * Still, the obvious disadvantage of both life settlements and surrendering a life insurance policy is that an
 individual gives up all rights in the policy, most notably the death benefit.
 
-### What alternative options are available?
+## What alternative options are available?
 
-#### Surrender the policy
+### Surrender the policy
 
 * When a life insurance policy is surrendered, the policyowner turns in the policy for a predetermined sum
 of money. This is the surrender value, and it is typically much less than the amount one can expect from a
@@ -123,7 +123,7 @@ premiums to the current cash value amount and subtracting any outstanding loans 
 surrender charges. If there is any gain (difference between premiums paid and surrender value), that
 amount will be taxed as ordinary income.
 
-#### Obtain a policy loan
+### Obtain a policy loan
 
 * Unless otherwise stated in the policy, a policyowner has the right to borrow against the accumulated cash
 value in his or her life insurance policy. A policy loan may yield a better interest rate than what is currently
@@ -134,20 +134,20 @@ value that has built up in the policy.
 
     * <strong class="info">Tip:</strong> Interest on life insurance policy loans is not tax deductible to individuals, although it may, in some instances, be tax deductible to businesses.
 
-#### Let policy lapse
+### Let policy lapse
 
 * If the policyowner ceases premium payments, the policy will eventually lapse (after the stated grace
 period expires), unless the cash value is great enough to generate dividends or interest sufficient to
 sustain the policy. Should the policy lapse, the accumulated cash value will be forfeited. However, no
 income tax liability will be incurred, and no surrender charges will be due.
 
-### How are life settlements regulated?
+## How are life settlements regulated?
 
 * Currently, more than half of the states have statutes regulating life settlements. Most states that have
 enacted such legislation protect consumers by requiring life settlement agents and brokers to register and
 be licensed.
 
-### What are the tax implications of a life settlement?
+## What are the tax implications of a life settlement?
 
 * Since life settlements by definition don't meet the rigid criteria of viatical settlements, the proceeds will
 generally be taxable. Because the life settlement practice is still unfolding, it is important to discuss these
@@ -168,3 +168,54 @@ to the sale of the same policy.
     - <strong class="info">Example(s):</strong> Lou owns a cash value life insurance policy with a death benefit of $500,000. He is 68 years old and has recently been diagnosed with emphysema. Lou needs money to pay for medical treatments and is considering using his life insurance policy for that purpose. He is thinking about either surrendering the policy for its cash value or selling it to a life settlement company. Part of his decision will be based on the income tax consequences of each option. Lou has owned the policy for 10 years and has paid $60,000 in premiums. The cost of insurance during his ownership of the policy is $10,000. The cash surrender value is $85,000 and he has been offered $100,000 if he sells the policy to a life settlement company.
     - <strong class="info">Example(s):</strong> 1. According to IRS Revenue Ruling 2009-13, if Lou surrenders his policy, he will realize $25,000 of gain ($85,000 - $60,000) which is taxed as ordinary income.
     - <strong class="info">Example(s):</strong> 2. On the other hand, if Lou sells his policy, his basis is adjusted ($60,000 - $10,000 = $50,000) to reflect the cost of insurance paid during the years he owned the policy. Thus, his gain from the sale is $50,000 ($100,000 - $50,000). The inside buildup in the policy, $25,000 (surrender value less basis), is taxed as ordinary income. The balance of the sale, $25,000, is taxed as long term capital gain.
+
+<a href="#" class="back-to-top"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+<script>
+    $(document).ready(function(){
+        initTableOfContents();
+        initBackToTop();
+    });
+    
+    function initTableOfContents() {
+        var ToC = "<nav role='navigation' class='table-of-contents'>" +
+                    "<h4>On this page:</h4>" +
+                        "<ul>";
+        
+        var newline, el, title, link;
+        $("h2").each(function() {
+            el = $(this);
+            title = el.text();
+            id = title.toLowerCase().split(" ").join("_");
+            el.attr("id", id)
+
+            newline =   "<li>" +
+                            "<a href='#" + id + "'>" + title + "</a>"
+                        "</li>";
+
+            ToC += newline;
+        });
+        ToC += "</ul></nav>";
+        $("article").prepend(ToC);
+    }
+
+    function initBackToTop() {
+            var offset = 250;
+ 
+            var duration = 300;
+ 
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > offset) {
+                    $('.back-to-top').fadeIn(duration);
+                } else {
+                    $('.back-to-top').fadeOut(duration);
+                }
+            });
+
+            $('.back-to-top').click(function (event) {
+                event.preventDefault();
+                $('html, body').animate({ scrollTop: 0 }, duration);
+                return false;
+            });
+    }
+</script>

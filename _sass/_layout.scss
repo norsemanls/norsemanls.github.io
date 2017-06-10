@@ -106,7 +106,7 @@
     margin-bottom: 10rem;
 }
 
-nav {
+nav.side-menu {
     font-size: $small-medium-font-size;
 
     ul {
@@ -178,10 +178,13 @@ nav {
     padding: 19px;
     border: 1px solid $white;
     background: $white-alpha;
+    position:relative;
 
     .fa {
         color: $tan;
     }
+
+
 
     &.panel-loud {
         text-align:center;
@@ -195,17 +198,20 @@ nav {
     &.panel-brand {
         font-family: $fancy-font-family;
         font-size: $medium-font-size;
-        color: $green;
+        color: $text-color;
         padding-top: 20px;
         padding-bottom: 250px;
-        background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../images/plane-square.jpg');
-        background-position: center top;
+        background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../images/plane.jpg');
+        background-position: center;
         background-size:cover;
 
-        p {
-            margin-bottom: 5px;
+        p.boom {
+            font-style: italic;
+            margin-bottom: 21rem;
         }
     }
+
+
 
     @include media-query($on-palm) {
         &.panel-brand {
@@ -216,6 +222,41 @@ nav {
     }
 }
 
+    .table-of-contents {
+        float: right;
+        top:0;
+        right:0;
+        padding: 1rem;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        background-color: $white;
+        border-radius: 4px;
+        max-width: 350px;
+
+        a {
+            color: $blue;
+        }
+    }
+
+    .back-to-top {
+        position: fixed;
+        bottom: 10px;
+        right: 30px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        padding: 4px 5px;
+        background: $white-alpha;
+        color: $red;
+        text-align: center;
+        font-size: 25px;
+
+        .glyphicon {
+            top: -2px;
+            margin-right: 2px;
+            margin-left: 2px;
+        }
+    }
 
 /**
  * Site footer
