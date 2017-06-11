@@ -51,7 +51,7 @@ underwriting criteria in determining who is eligible for a life settlement:
 
 ## Policies less than two years old
 
-* Most life settlement providers require that a life insurance policy be in effect for more than two years. That
+Most life settlement providers require that a life insurance policy be in effect for more than two years. That
 is because an incontestability clause is standard in most life insurance policies. This clause typically
 provides that the insurer has two years in which to contest the veracity of the information provided by the
 insured. The insurer uses this time to discover any misinformation (which may be intentional or not) that
@@ -60,15 +60,15 @@ claiming a material misstatement or fraud in the application. The significance o
 that a life settlement provider wants to make sure that the insurer isn't able to rescind the contract once
 the life settlement provider has purchased it.
 
-    * <strong class="danger">Caution:</strong> There is an exception to this rule. If the applicant misstates his or her age, the
+* <strong class="danger">Caution:</strong> There is an exception to this rule. If the applicant misstates his or her age, the
 insurer can act on this information whenever the information is discovered by requiring the
 policyowner to pay a higher premium, or by reducing the death benefit to that which would
 have been purchased by the lower premium.
-    * <strong class="info">Example(s):</strong> Jenna fills out an application for life insurance. One question on the application
+* <strong class="info">Example(s):</strong> Jenna fills out an application for life insurance. One question on the application
 asks about her smoking habits. Jenna believes that she could be faced with higher
 premiums if she admits to having been a smoker, so she lies and answers that she never
 smoked. In truth, she smoked for 15 years, but gave up the habit 10 years ago.
-    * <strong class="info">Example(s):</strong> The life insurance company has two years to discover the truth about Jenna's
+* <strong class="info">Example(s):</strong> The life insurance company has two years to discover the truth about Jenna's
 history. This is the contestability period. If the information is uncovered before the end of the
 period, the insurer can cancel Jenna's policy (though it may have to return some of the
 premium paid), or it can offer her the option of a higher premium to compensate for the new
@@ -79,23 +79,24 @@ the life insurance coverage agreed to in the contract.
 
 ### Often a better payout than surrendering for cash value
 
-* Life settlements allow policyowners more flexibility in managing the cash value of their life insurance
+Life settlements allow policyowners more flexibility in managing the cash value of their life insurance
 policies. If a policyowner wants to forfeit a policy's death benefit and "cash out" of the policy, he or she
 would normally surrender the policy to the insurance company for the existing cash surrender value. A life
 settlement, however, may provide the policyowner with significantly more proceeds. An individual may
 use the proceeds for any purpose he or she wishes--including making lifetime gifts to loved ones.
 
-    * <strong class="danger">Caution:</strong> Individual gifts in excess of the annual gift tax exclusion made from proceeds of a life settlement may be subject to gift tax.
+* <strong class="danger">Caution:</strong> Individual gifts in excess of the annual gift tax exclusion made from proceeds of a life settlement may be subject to gift tax.
 
 ### Life insurance dollars can be applied to other needs
 
-* Individuals purchase life insurance for many reasons (e.g., to provide income to their families in case of
+Individuals purchase life insurance for many reasons (e.g., to provide income to their families in case of
 their death, to pay for children's college education). When children become independent and couples
 reach retirement age, however, the need for life insurance often dissipates. Many find themselves paying
 premiums on policies they may no longer need. These individuals may feel that insurance dollars could
 be better spent elsewhere. The money might be used to take the vacation of a lifetime, to make needed
 home improvements, or simply to meet current expenses.
-* Alternatively, individuals may see a need to reallocate dollars to other insurance needs. For example,
+
+Alternatively, individuals may see a need to reallocate dollars to other insurance needs. For example,
 long-term care insurance, while typically not a consideration for young, healthy people just starting their
 careers, is often an important part of financial plans for older individuals. However, premiums can be
 costly, and cash may not be readily available. A life settlement may be a source of funds to purchase
@@ -116,7 +117,7 @@ individual gives up all rights in the policy, most notably the death benefit.
 
 ### Surrender the policy
 
-* When a life insurance policy is surrendered, the policyowner turns in the policy for a predetermined sum
+When a life insurance policy is surrendered, the policyowner turns in the policy for a predetermined sum
 of money. This is the surrender value, and it is typically much less than the amount one can expect from a
 life settlement. Surrender value is calculated by adding the accumulated dividends and unearned
 premiums to the current cash value amount and subtracting any outstanding loans (or interest), and the
@@ -125,25 +126,25 @@ amount will be taxed as ordinary income.
 
 ### Obtain a policy loan
 
-* Unless otherwise stated in the policy, a policyowner has the right to borrow against the accumulated cash
+Unless otherwise stated in the policy, a policyowner has the right to borrow against the accumulated cash
 value in his or her life insurance policy. A policy loan may yield a better interest rate than what is currently
 being offered by area banking institutions. This is not a typical loan, however, because it need never be
 repaid. The loan balance will be subtracted from the death benefit or future surrender value. However,
 though a policy loan gives policyowners immediate access to cash, these loans are limited to the cash
 value that has built up in the policy.
 
-    * <strong class="info">Tip:</strong> Interest on life insurance policy loans is not tax deductible to individuals, although it may, in some instances, be tax deductible to businesses.
+* <strong class="info">Tip:</strong> Interest on life insurance policy loans is not tax deductible to individuals, although it may, in some instances, be tax deductible to businesses.
 
 ### Let policy lapse
 
-* If the policyowner ceases premium payments, the policy will eventually lapse (after the stated grace
+If the policyowner ceases premium payments, the policy will eventually lapse (after the stated grace
 period expires), unless the cash value is great enough to generate dividends or interest sufficient to
 sustain the policy. Should the policy lapse, the accumulated cash value will be forfeited. However, no
 income tax liability will be incurred, and no surrender charges will be due.
 
 ## How are life settlements regulated?
 
-* Currently, more than half of the states have statutes regulating life settlements. Most states that have
+Currently, more than half of the states have statutes regulating life settlements. Most states that have
 enacted such legislation protect consumers by requiring life settlement agents and brokers to register and
 be licensed.
 
