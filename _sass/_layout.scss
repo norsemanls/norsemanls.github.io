@@ -76,14 +76,16 @@
     }
 }
 
-#toggle {
+
+.mobile-tools {
     display: none;
     @include media-query($on-palm) {
-        display:inline-block;
-        position: relative;
-        background:$white-alpha-light;
-        top:-15px;
-        right:-10px;
+        display: inline-block;
+        float:right;
+        #toggle {
+            margin-top: 10px;
+            background:$white-alpha-light;
+        }
     }
 }
 
