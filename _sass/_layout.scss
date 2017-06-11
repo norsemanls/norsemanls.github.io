@@ -10,7 +10,7 @@
     height: 100%;
 
     @include media-query($on-palm){
-        background: $green;
+        background: $tan;
     }
 }
 
@@ -28,15 +28,7 @@
     background: transparent;
 }   
 .logo {
-    a, img {
-        display:inline-block;
-    }
-
-    img {
-        vertical-align: top;
-        margin-top: 5px;
-        height: 80px;
-    }
+    display: inline-block;
 
     a {
         font-family: $fancy-font-family;
@@ -44,9 +36,19 @@
         color: $white;
         position:relative;
 
+        h1, img {
+            display:inline-block;
+        }
+
         h1 {
             font-size: 36px;
         }
+        img {
+            vertical-align: top;
+            margin-top: 5px;
+            height: 80px;
+        }
+
         &:hover {
             text-decoration:none;
         }
@@ -59,18 +61,29 @@
             position:relative;
             top: 3px;
         }
-    }
-    @include media-query($on-palm){
-        h1 {
-            font-size: 24px;
-        }
-        img {
-            height:50px;
-        }
+        @include media-query($on-palm){
+            h1 {
+                font-size: 26px;
+            }
+            img {
+                height:50px;
+            }
 
-        span {
-            line-height: 1.5rem;
+            span {
+                line-height: 2.7rem;
+            }
         }
+    }
+}
+
+#toggle {
+    display: none;
+    @include media-query($on-palm) {
+        display:inline-block;
+        position: relative;
+        background:$white-alpha-light;
+        top:-15px;
+        right:-10px;
     }
 }
 
@@ -104,6 +117,11 @@
     background:transparent;
     padding: $spacing-unit 0 60px;
     margin-bottom: 10rem;
+
+    @include media-query($on-palm){
+        background: $white-alpha;
+        margin-bottom: 0;
+    }
 }
 
 nav.side-menu {
@@ -135,10 +153,6 @@ nav.side-menu {
             padding: 10px 5px;
             border-top: 1px solid $red;
         }
-        
-        // &:first-child > a {
-        //     padding-top: 30px;
-        // }
 
         &:first-child > a {
             border: none;
@@ -146,6 +160,15 @@ nav.side-menu {
         }
     }
     
+    @include media-query($on-palm){
+        display:none;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-top: -30px;
+        ul {
+            background: $white;
+        }
+    }
 }
 
 .site-banner {
@@ -159,11 +182,17 @@ nav.side-menu {
 .hero {
     font-family: $fancy-font-family;
     font-size: $xlarge-font-size;
-    padding-left: 2rem;
     // border: 2px solid $grey-dark;
     background: transparent;
     color: $white;
     margin-bottom: 6rem;
+
+    @include media-query($on-palm){
+        font-size: $large-font-size;
+        text-align:center;
+        margin-bottom: 2rem;
+        color: $text-color;
+    }
 }
 
 .hero-alt {
@@ -173,18 +202,25 @@ nav.side-menu {
     background: 0;
 }
 
+.separator {
+    &:before {
+        content: ' | ';
+        padding: 0 5px;
+        @include media-query($on-palm){
+            display:none;
+        }
+    }
+}
+
 .panel {
     min-height: 20px;
     padding: 19px;
-    border: 1px solid $white;
     background: $white-alpha;
     position:relative;
 
     .fa {
         color: $tan;
     }
-
-
 
     &.panel-loud {
         text-align:center;
@@ -193,6 +229,13 @@ nav.side-menu {
         margin-right: 6rem;
         padding: 10px;
         color:$red; 
+        @include media-query($on-palm){
+            margin: 0;
+            border: 1px solid $red;
+            span {
+                display:block;
+            }
+        }
     }
 
     &.panel-brand {
@@ -205,20 +248,51 @@ nav.side-menu {
         background-position: center;
         background-size:cover;
 
+        .norseman-plane {
+            display:none;
+        }
+
         p.boom {
             font-style: italic;
             margin-bottom: 21rem;
         }
+
+        @include media-query($on-palm) {
+            background: $white-alpha;
+            padding-top: 0;
+            padding-bottom: 20px;
+            font-size:$small-medium-font-size;
+
+            p.boom {
+                margin-bottom: 0;
+            }
+
+            .norseman-plane {
+                display: block;
+                background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../images/plane-square.jpg');
+                background-position: center;
+                background-size:cover;
+                height: 200px;
+                padding-bottom: 10px;
+            }
+        }
+
+
     }
 
 
 
     @include media-query($on-palm) {
-        &.panel-brand {
-            background: $white-alpha;
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
+        background: transparent;
+        border: none;
+        padding: 0;
+    }
+}
+
+.visible-mobile {
+    display: none;
+    @include media-query($on-palm) {
+        display: block;
     }
 }
 
@@ -236,6 +310,10 @@ nav.side-menu {
         a {
             color: $blue;
         }
+
+        @include media-query($on-palm) {
+            margin-left: 0;
+        }
     }
 
     .back-to-top {
@@ -246,15 +324,24 @@ nav.side-menu {
         width: 40px;
         height: 40px;
         padding: 4px 5px;
-        background: $white-alpha;
-        color: $red;
+        background: $red-alpha;
+        color: $white-alpha;
         text-align: center;
         font-size: 25px;
 
+        &:hover, &:focus, &:focus:hover,&:active  {
+            color: $white-alpha;
+        }
+
         .glyphicon {
-            top: -2px;
-            margin-right: 2px;
+            top: 0px;
+            margin-right: 0px;
             margin-left: 2px;
+        }
+
+        @include media-query($on-palm) {
+            right: 15px;
+            bottom: 5px;
         }
     }
 
@@ -272,13 +359,17 @@ nav.side-menu {
     .footer-description {
         margin-top: 10px;
     }
+
+    @include media-query($on-palm){
+        text-align: center;
+    }
 }
 
 .final-footer {
-    line-height:$spacing-unit;
     background: $alpha-dark;
     font-size: smaller;
     text-align: center;
+    padding: $spacing-unit / 2;
 }
 
 .footer-heading {
@@ -310,6 +401,11 @@ nav.side-menu {
     @include media-query($on-laptop) {
         font-size: 36px;
     }
+
+    @include media-query($on-palm) {
+        color: $text-color;
+        font-size: 24px;
+    }
 }
 
 .post-list {
@@ -331,30 +427,3 @@ nav.side-menu {
     font-size: 24px;
 }
 
-.post-content {
-    margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-    }
-}

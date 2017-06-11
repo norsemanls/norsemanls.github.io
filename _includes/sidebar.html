@@ -21,3 +21,38 @@
     </ul>
 </nav>
 
+<script>
+    var menufafa = "fa fa-bars";
+    var closefafa = "fa fa-close";
+
+    $( document ).ready(function() {
+        var $sideMenu = $(".side-menu");
+
+        $( window ).on("resize", function() {
+            if ($( window ).width() > 600) {
+                $sideMenu.show();
+            }
+        });
+
+        $("#toggle").on("click", function() {
+            $this = $(this);
+            if ($this.hasClass("open")){
+                $this.removeClass("open");
+                $sideMenu.hide();
+                changeIcon($this, menufafa);
+            } else {
+                $sideMenu.show();
+                $this.addClass("open");
+                changeIcon($this, closefafa);
+            }
+            
+        });
+    });
+
+    function changeIcon(el, iconClass) {
+        var span = el.find("span")
+        span.removeClass();
+        span.addClass(iconClass);
+    }
+</script>
+

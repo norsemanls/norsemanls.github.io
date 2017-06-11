@@ -169,14 +169,14 @@ to the sale of the same policy.
     - <strong class="info">Example(s):</strong> 1. According to IRS Revenue Ruling 2009-13, if Lou surrenders his policy, he will realize $25,000 of gain ($85,000 - $60,000) which is taxed as ordinary income.
     - <strong class="info">Example(s):</strong> 2. On the other hand, if Lou sells his policy, his basis is adjusted ($60,000 - $10,000 = $50,000) to reflect the cost of insurance paid during the years he owned the policy. Thus, his gain from the sale is $50,000 ($100,000 - $50,000). The inside buildup in the policy, $25,000 (surrender value less basis), is taxed as ordinary income. The balance of the sale, $25,000, is taxed as long term capital gain.
 
-<a href="#" class="back-to-top"><span class="glyphicon glyphicon-chevron-up"></span></a>
+<a href="#" class="back-to-top btn" tooltip="Back to top"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
 <script>
     $(document).ready(function(){
         initTableOfContents();
         initBackToTop();
     });
-    
+
     function initTableOfContents() {
         var ToC = "<nav role='navigation' class='table-of-contents'>" +
                     "<h4>On this page:</h4>" +
