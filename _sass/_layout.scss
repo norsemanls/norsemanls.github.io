@@ -190,12 +190,17 @@ nav.side-menu {
     font-family: $fancy-font-family;
     font-size: $xlarge-font-size;
     // border: 2px solid $grey-dark;
-    background: transparent;
+    background: $alpha;
+    border: 1px solid $grey-light;
+    border-radius: 4px;
+    padding: $spacing-unit $spacing-unit+10px;
+    text-align: center;
     color: $white;
     margin-top: $spacing-unit;
     margin-bottom: 6rem;
 
     @include media-query($on-palm){
+        background: transparent;
         font-size: $large-font-size;
         text-align:center;
         margin-bottom: 2rem;
@@ -319,7 +324,9 @@ nav.side-menu {
         }
 
         @include media-query($on-palm) {
-            margin-left: 0;
+            float:none;
+            margin-left: auto;
+            margin-right:auto;
         }
     }
 
