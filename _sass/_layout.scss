@@ -26,6 +26,10 @@
     position: relative;
     color:$white;
     background: transparent;
+
+    .phone-link {
+        color: $white;
+    }
 }   
 .logo {
     display: inline-block;
@@ -128,6 +132,7 @@
 
 nav.side-menu {
     font-size: $small-medium-font-size;
+    margin-top: $spacing-unit;
 
     ul {
         margin-left: 0;
@@ -187,6 +192,7 @@ nav.side-menu {
     // border: 2px solid $grey-dark;
     background: transparent;
     color: $white;
+    margin-top: $spacing-unit;
     margin-bottom: 6rem;
 
     @include media-query($on-palm){
