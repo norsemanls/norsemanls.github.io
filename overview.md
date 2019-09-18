@@ -155,20 +155,20 @@ generally be taxable. Because the life settlement practice is still unfolding, i
 matters with a qualified estate and/or tax planning professional.
 * The tax treatment of life settlements generally leads to a two-tier taxation of the proceeds paid to the
 policy owner, where a portion may be taxed as ordinary income and a portion as long-term capital gain:
-* The basis is the sum of the premiums paid by the policyowner reduced by any amounts withdrawn. IRS
-guidance (IRS Revenue Ruling 2009-13) indicates that in calculating basis, the portion of premiums
-allocable to the cost of insurance protection must also be subtracted. Proceeds resulting from a life
-settlement are taxable only to the extent that the amount received exceeds basis.
+* The basis is the sum of the premiums paid by the policyowner reduced by any amounts withdrawn.
+Proceeds resulting from a life settlement are taxable only to the extent that the amount received
+exceeds basis.
 * To the extent that the amount received in the life settlement exceeds basis but is less than or equal to the
 cash surrender value of the policy, the gain is taxed as ordinary income.
 * To the extent that the amount received in the life settlement exceeds the cash surrender value of the
 policy, gain is generally treated as long-term capital gain.
-* The following example compares the tax treatment of the surrender of a cash value life insurance policy
-to the sale of the same policy.
+* The 2018 Tax Reform Act changed and simplified how life settlements are taxed.
+Under this Act, a surrender or a sale of a life insurance policy are treated the same for tax purposes,
+with the possibility of some ordinary income and some long-term capital gain, per the example below.
 
-    - <strong class="info">Example(s):</strong> Lou owns a cash value life insurance policy with a death benefit of $500,000. He is 68 years old and has recently been diagnosed with emphysema. Lou needs money to pay for medical treatments and is considering using his life insurance policy for that purpose. He is thinking about either surrendering the policy for its cash value or selling it to a life settlement company. Part of his decision will be based on the income tax consequences of each option. Lou has owned the policy for 10 years and has paid $60,000 in premiums. The cost of insurance during his ownership of the policy is $10,000. The cash surrender value is $85,000 and he has been offered $100,000 if he sells the policy to a life settlement company.
-    - <strong class="info">Example(s):</strong> 1. According to IRS Revenue Ruling 2009-13, if Lou surrenders his policy, he will realize $25,000 of gain ($85,000 - $60,000) which is taxed as ordinary income.
-    - <strong class="info">Example(s):</strong> 2. On the other hand, if Lou sells his policy, his basis is adjusted ($60,000 - $10,000 = $50,000) to reflect the cost of insurance paid during the years he owned the policy. Thus, his gain from the sale is $50,000 ($100,000 - $50,000). The inside buildup in the policy, $25,000 (surrender value less basis), is taxed as ordinary income. The balance of the sale, $25,000, is taxed as long term capital gain.
+    - <strong class="info">Example:</strong> Lou owns a cash value life insurance policy with a death benefit of $500,000. He is 68 years old and has recently been diagnosed with emphysema. Lou needs money to pay for medical treatments and is considering using his life insurance policy for that purpose. He is thinking about either surrendering the policy for its cash value or selling it to a life settlement company. Part of his decision will be based on the income tax consequences of each option. Lou has owned the policy for 10 years and has paid $60,000 in premiums. The cash surrender value is $85,000 and he has been offered $100,000 if he sells the policy to a life settlement company.
+
+        In this situation, Lou will have ordinary income on the $25,000 amount by which the cash surrender value of the $85,000 exceeds his $60,000 basis. He will then have long-term capital gain on the $15,000 by which the offer of $100,000 exceeds the cash surrender value of $85,000
 
 <a href="#" class="back-to-top btn" tooltip="Back to top"><span class="glyphicon glyphicon-chevron-up"></span></a>
 

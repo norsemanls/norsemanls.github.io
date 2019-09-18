@@ -2,12 +2,12 @@
  * Background for main content
  */
 .bg-wrapper {
-    background: linear-gradient( rgba(11,26,9, 0.65), rgba(11,26,9, 0.65) ), url('../images/wooded-trail.jpeg');
-    // background: linear-gradient( rgba(38,35,36, 0.7), rgba(38,35,36, 0.7) ), url('../images/wooded-trail.jpeg');
-    background-size: 120% auto;
+    background: linear-gradient(rgba(11, 26, 9, 0.65), rgba(11, 26, 9, 0.65)), url('../images/wooded-trail.jpeg');    
+    background-size: auto, 120% calc(100vh - 50px);
     background-repeat:no-repeat;
     background-position:top;
     height: 100%;
+    min-height: calc(100vh - 50px);
 
     @include media-query($on-palm){
         background: $tan;
@@ -53,7 +53,8 @@
             height: 80px;
         }
 
-        &:hover {
+        &:hover, &hover:active {
+            color: $white;
             text-decoration:none;
         }
         span {

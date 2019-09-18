@@ -3,9 +3,9 @@ layout: page
 title: Contact Us
 permalink: /contact/
 ---
-
+Please contact us directly or submit a message below
+{% include contact-info.html %}
 {% include contact-form.html %}
-
 
 <script>
     $(document).ready(function() {
