@@ -3,6 +3,7 @@ layout: page
 title: Advisor Tutorial
 permalink: /tutorial/
 ---
+
 <p class="visible-mobile">This page is best viewed on a larger screen</p>
 
 <section id="advisor-checkin">
@@ -10,11 +11,9 @@ permalink: /tutorial/
 {% include advisor-checkin.html %}
 </section>
 
-
 <article id="tutorial" class="hidden">
-    <iframe src = "{{ site.baseurl }}/js/ViewerJS/#../../assets/Advisor Tutorial.pdf" width='100%' height='600px' allowfullscreen webkitallowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/V9RgzTnp1t0?modestbranding=1&rel=0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </article>
-
 
 <script>
 
